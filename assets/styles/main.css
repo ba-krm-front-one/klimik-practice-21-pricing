@@ -608,24 +608,26 @@ body {
     width: 100%;
     height: 300px;
     background-color: #ffffff;
-    padding-left: 30%; }
+    padding-left: 30%;
+    z-index: 1; }
     .plan__details:before {
       display: block;
       content: '';
       width: 100%;
-      height: 100px;
+      height: 200px;
       position: absolute;
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
       top: -100px;
       left: 0;
-      background: url("../images/icon-1.png") 50% no-repeat #fff; }
+      background: url("../images/icon-1.png") 50% 22% no-repeat #fff;
+      z-index: -1; }
     .plan__details--primary {
       height: 330px; }
     .plan__details--primary::before {
-      background: url("../images/icon-2.png") 50% no-repeat #fff; }
+      background: url("../images/icon-2.png") 50% 22% no-repeat #fff; }
   .plan:nth-child(3) .plan__details:before {
-    background: url("../images/icon-3.png") 50% no-repeat #fff; }
+    background: url("../images/icon-3.png") 50% 22% no-repeat #fff; }
   .plan__description {
     font-family: "Roboto", sans-serif;
     color: #181818;
@@ -648,7 +650,8 @@ body {
     bottom: 0;
     left: 50%;
     margin-left: -101px;
-    transform: translateY(33%); }
+    transform: translateY(33%);
+    z-index: 2; }
     .plan__purchase-btn:hover {
       box-shadow: 0 0 10px 0 #85c0f7; }
     .plan__purchase-btn--primary {
